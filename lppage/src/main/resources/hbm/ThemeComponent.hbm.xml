@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.enet.io.lppage.core.domain.ThemeComponent" table="themecomponent">
+
+		<id name="themecomponentid">
+			<generator class="identity"/>
+		</id>
+
+		<property name="theme" column="theme"/>
+		<property name="code" column="code"/>
+		<property name="section" column="section"/>
+		<property name="tags" column="tags"/>
+		<property name="status" column="status"/>
+		<property name="content" column="content"/>
+		<property name="lastupdate" column="lastupdate"/>
+		<property name="jdata" column="jdata"/>
+	</class>
+</hibernate-mapping>
