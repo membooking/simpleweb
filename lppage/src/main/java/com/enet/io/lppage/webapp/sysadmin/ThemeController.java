@@ -53,7 +53,7 @@ public class ThemeController {
             themeComponent.setLastupdate(new Timestamp(System.currentTimeMillis()));
             themeComponent = themeService.saveThemeComponent(themeComponent);
         }
-        return "redirect:/sysadmin/themes";
+        return "redirect:/sysadmin/theme/"+theme+"/components";
     }
 
     @RequestMapping(value="/theme/{theme}/view-page", method = RequestMethod.GET)
